@@ -1,0 +1,28 @@
+.div_class_head{
+    /* border: 1px solid black; */
+     box-shadow: white 1px 2px 1px;
+     
+     
+}
+/* Menu Choose */
+.div_class_head ul li a{
+    padding: 5px;
+    /* padding-left: 10px; */
+    /* border: 1px solid white; */
+    background-color: black;
+     text-decoration: none;
+    color: rgb(107, 110, 110);
+    transition: color 1s 10ms;
+    border-radius: 10px;
+
+}
+.div_class_head ul li a:hover{
+    color :white;
+
+    text-decoration: underline;
+}
+/* Header ICON */
+.div_class_head h1 a{
+   
+    color:white;
+}
