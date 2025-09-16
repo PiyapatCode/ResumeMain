@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@900&family=Roboto+Slab:wght@100..900&display=swap');
+html{
+     scroll-behavior: smooth;
+}
 body{
     padding:0;
     margin: 0;
@@ -6,6 +9,7 @@ body{
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
+  
   
 }
 .div_class_head{
