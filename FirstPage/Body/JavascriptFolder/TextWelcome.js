@@ -2,7 +2,7 @@
 var typeWriterElement = document.getElementById('text_Welcome');
 
 // The TextArray: 
-var textArray = ["HELLO PIYAPAT","SCROLL DOWN","TO SEE THE DETAIL"];
+var textArray = ["HELLO PIYAPAT"];
 
 // You can also do this by transfering it through a data-attribute
 // var textArray = typeWriterElement.getAttribute('data-array');
@@ -10,16 +10,16 @@ var textArray = ["HELLO PIYAPAT","SCROLL DOWN","TO SEE THE DETAIL"];
 
 // function to generate the backspace effect 
 function delWriter(text, i, cb) {
-	if (i >= 0 ) {
-		typeWriterElement.innerHTML = text.substring(0, i--);
-		// generate a random Number to emulate backspace hitting.
- 		var rndBack = 10 + Math.random() * 100;
-		setTimeout(function() {
-			delWriter(text, i, cb);
-		},rndBack); 
-	} else if (typeof cb == 'function') {
-		setTimeout(cb,1000);
-	}
+	// if (i >= 0 ) {
+	// 	typeWriterElement.innerHTML = text.substring(0, i--);
+	// 	// generate a random Number to emulate backspace hitting.
+ 	// 	var rndBack = 10 + Math.random() * 100;
+	// 	setTimeout(function() {
+	// 		delWriter(text, i, cb);
+	// 	},rndBack); 
+	// } else if (typeof cb == 'function') {
+	// 	setTimeout(cb,1000);
+	// }
 };
 
 // function to generate the keyhitting effect
@@ -27,14 +27,14 @@ function typeWriter(text, i, cb) {
 	if ( i < text.length+1 ) {
 		typeWriterElement.innerHTML = text.substring(0, i++);
 		// generate a random Number to emulate Typing on the Keyboard.
-		var rndTyping = 250 - Math.random() * 100;
+		var rndTyping = 20
 		setTimeout( function () { 
 			typeWriter(text, i++, cb)
 		},rndTyping);
 	} else if (i === text.length+1) {
 		setTimeout( function () {
 			delWriter(text, i, cb)
-		},500);
+		},2000);
 	}
 };
 
@@ -43,7 +43,7 @@ function StartWriter(i) {
 	if (typeof textArray[i] == "undefined") {
 		setTimeout( function () {
 			StartWriter(0)
-		},500);
+		},50);
 	} else if(i < textArray[i].length+1) {
 		typeWriter(textArray[i], 0, function () {
 			StartWriter(i+1);
@@ -53,5 +53,5 @@ function StartWriter(i) {
 // wait one second then start the typewriter
 setTimeout( function () {
 	StartWriter(0);
-},2000);
+},500);
 	

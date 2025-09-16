@@ -1,7 +1,28 @@
 .Scroll_text{
-    
+    list-style: none;
+    box-sizing: border-box;
+    width: 3vw;
+    height: 3vw;
     justify-content: center;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 1px 1px 0px;
+    cursor: pointer;
     transform: rotate(45deg);
+    transition:border 0.1s ease;
+    
+}
+.Scroll_text:hover{
+    
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+}
+.three_box div{
+    z-index: auto;
+    width: 100%;
+    display:flex;
+    /* border:1px solid white; */
     /* background-color: white; */
-    border :0px 1px 0px solid white;
+    justify-content: center;
+    align-items: center;
 }
