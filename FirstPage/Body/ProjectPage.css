@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+.Project_Background{
+    height: 100vh;
+}
+.Project_Structure{
+    /* border:1px solid red; */
+    height:100vh;
+}
+.Project_Structure h1{
+    color:white;
+     font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  text-shadow:0px 0px 10px white;
+}
+.Project_Structure ul{
+    list-style: none;
+    /* justify-content: center; */
+    margin:0;
+    padding:0;
+    /* border:1px solid green; */
+    display:grid;
+     height:80vh;
+     gap:0;
+     column-gap: 10px;
+     justify-content: center;
+     align-content: center;
+     grid-template-columns: auto auto auto auto auto auto ;
+}
+.Project_Structure ul li{
+    margin:0;
+    padding:0;
+    width:200px;
+    height:200px;
+    
+    border-radius: 15px;
+border:1px solid white;
+/* gap: 20px; */
+
+}
+.Project_Structure ul li:hover{
+    transform:translateY(-5px);
+    box-shadow:0px 0px 10px white;
+}

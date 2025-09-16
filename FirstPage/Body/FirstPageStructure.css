@@ -49,7 +49,7 @@ body{
    transform: translateY(0px);
 }
 .three_box ul li img{
-  filter:grayscale(90%) blur(2px);
+  filter:grayscale(90%) ;
   
   border-radius: 15px;
    width:350px;
