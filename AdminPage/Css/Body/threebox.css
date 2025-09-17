@@ -1,0 +1,28 @@
+.List_Background{
+    height:100vh;
+    /* border:1px solid white; */
+    
+}
+.List_Structure{
+   /* border:1px solid white; */
+   padding:0;
+   margin: 0;   
+
+}
+.List_Structure ul{
+        
+    border: 1px solid white;
+    list-style: none;
+    column-gap: 50px;
+    
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.List_Structure ul li{
+    margin-top: 50px;
+    width: 350px;
+    height: 170px;
+    border-radius:30px ;
+    background-color: white;
+}

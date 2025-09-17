@@ -18,12 +18,11 @@
     border-right-width: 4px;
 }
 
-.three_box div{
+.div_Scroll_down{
     z-index: auto;
     width: 100%;
     display:flex;
-    /* border:1px solid white; */
-    /* background-color: white; */
+  
     justify-content: center;
     align-items: center;
 }
