@@ -1,0 +1,81 @@
+.InterfaceChangePic{
+    /* position: absolute; */
+    position: absolute;
+    display: flex;
+    top: 70px;
+    z-index: 150;
+    height: 90vh;
+    width: 100%;
+    /* border:1px solid blue; */
+    justify-content: center;
+    
+}
+.InterdaceChangeList_div{
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 20px;
+   background-color: black;
+   box-shadow: 0px 0px 10px white;
+    border: 1px solid #fff;
+    
+}
+.InterdaceChangeList_div ul{
+    /* border:1px solid red; */
+    display:grid;
+    padding: 20px;
+    width: 700px;
+    grid-template-rows: auto auto auto;
+    row-gap: 25px;
+    padding: 0;
+    /* justify-content: center; */
+}
+.InterdaceChangeList_div ul li{
+    border: 1px solid white;
+    list-style: none;
+    padding: 50px;
+    border-radius: 20px;
+}
+.Button_cancer_confirm{
+    display: flex;
+    justify-content: end;
+}
+.Button_cancer_confirm ul{
+    border-radius: 15px;
+    border: 1px solid white;
+    width: 100%;
+    height: 50px;
+    display:grid;
+    list-style: none;
+    column-gap: 50px;
+    background-color: #000000;
+    /* align-content: end; */
+    justify-content: end;
+    grid-template-columns: auto auto;
+}
+.Button_cancer_confirm ul li {
+    width: 100px;
+    /* justify-content: end; */
+    border-radius: 20px;
+ box-sizing: border-box;
+ align-content: center;
+    /* padding:20px; */
+    margin-right: 10px;
+    /* border: 1px solid white; */
+}
+.Button_cancer_confirm ul li button{
+    border:1px solid white;
+    border-radius: 15px;
+    padding: 15px;
+    
+}
+.Button_cancer_confirm ul li:first-child button{
+    background-color: red;
+}
+.Button_cancer_confirm ul li:last-child button{
+    background-color: green;
+}
+.InnerInterface{
+   justify-content: center;
+    /* border: 1px solid rgb(255, 196, 0); */
+}

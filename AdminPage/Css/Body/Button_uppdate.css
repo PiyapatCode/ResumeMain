@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+.UpdatePic{
+    text-decoration: none;
+ font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  color:White;
+  /* text-shadow: 0px 0px 10px white; */
+  font-style: normal;
+  font-size: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid white;
+  background-color: #090909;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  transition: box-shadow 0.1s ease;
+}
+.UpdatePic:hover{
+    background-color: rgb(241, 241, 241);
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 5px white;
+    /* transform: scale(1.1); */
+    color:black;
+    border: 1px solid black;
+}
+.div_update_button{
+    display: flex;
+    
+    width: 100%;
+    justify-content: center;
+}

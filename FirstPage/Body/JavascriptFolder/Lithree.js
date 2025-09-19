@@ -7,31 +7,59 @@ List1.addEventListener('mouseover',()=>{
     threebox.style.columnGap = '5px';  
     List1.style.scale = '1.2';
     List1.style.zIndex = '100';
+   //
+    List2.style.opacity = '0.5';
+    List2.style.filter = 'grayscale(90%)';
+    List3.style.opacity = '0.5';
+    List3.style.filter = 'grayscale(90%)';
 });
 List1.addEventListener('mouseleave',()=>{
      List1.style.scale = '1';
      List1.style.zIndex = '99';
-    threebox.style.columnGap = '50px';
+     threebox.style.columnGap = '50px';
+     //
+     List2.style.opacity = '1';
+    List2.style.filter = 'grayscale(0%)';
+    List3.style.opacity = '1';
+    List3.style.filter = 'grayscale(0%)';
 });
 List2.addEventListener('mouseover',()=>{
     List2.style.zIndex = '100';
     threebox.style.columnGap = '5px';
     List2.style.scale = '1.2';
-   
+    //
+    List1.style.opacity = '0.5';
+    List1.style.filter = 'grayscale(90%)';
+    List3.style.opacity = '0.5';
+    List3.style.filter = 'grayscale(90%)';
 });
 List2.addEventListener('mouseleave',()=>{
     threebox.style.columnGap = '50px';
     List2.style.scale = '1';
     List2.style.zIndex = '99';
+    //
+     List1.style.opacity = '1';
+    List1.style.filter = 'grayscale(0%)';
+    List3.style.opacity = '1';
+    List3.style.filter = 'grayscale(0%)';
 });
 List3.addEventListener('mouseover',()=>{
      List3.style.zIndex = '100';
    threebox.style.columnGap = '5px';
     List3.style.scale = '1.2';
-
+   //
+    List1.style.opacity = '0.5';
+    List1.style.filter = 'grayscale(90%)';
+    List2.style.opacity = '0.5';
+    List2.style.filter = 'grayscale(90%)';
 });
 List3.addEventListener('mouseleave',()=>{
 threebox.style.columnGap = '50px';
     List3.style.scale = '1';
     List3.style.zIndex = '99';
+    //
+    List1.style.opacity = '1';
+    List1.style.filter = 'grayscale(0%)';
+    List2.style.opacity = '1';
+    List2.style.filter = 'grayscale(0%)';
 });
