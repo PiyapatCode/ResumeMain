@@ -45,11 +45,12 @@
    border-radius: 15px;
    /* background-color: white; */
    border:1px solid white;
-   
+    padding: 20px;
 }
 .About_Page_Structure ul li:first-child{
     width: 500px; 
     height:50vh;
+   
     
     
 }
@@ -57,4 +58,14 @@
     width: 400px;
     
     height:60vh;
+}
+.About_Page_Structure p1{
+    font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  color:White;
+  text-shadow: 0px 0px 10px white;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  
 }
