@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
+    <link rel="stylesheet" href="/AdminPage/Css/Body/List_ChangePic.css">
     <link rel="stylesheet" href="/AdminPage/Css/Body/UpdatePicture.css">
     <link rel="stylesheet" href="/AdminPage/Css/Body/Button_uppdate.css">
     <link rel="stylesheet" href="/AdminPage/Css/Body/threebox.css">
@@ -26,24 +27,24 @@
                 <li></li>
             </ul>
             <div class ="div_update_button">
-            <button class="UpdatePic">Update Picture</button>
+            <button class="UpdatePic" id ="UpdatePic_id">Update Picture</button>
             </div>
         </div>
         <!-- Change Picture Appear after Click UpdatePicture -->
-         <div class="InterfaceChangePic">
+         <div class="InterfaceChangePic" id ="InterfaceChangePic_id">
             <div class="InnerInterface">
             <div class ="InterdaceChangeList_div">
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li class ="List_changePic" id ="List_1"><img src="/FirstPage/image/herta.webp" id ="image_1" > <input type="file" id="image_input1" accept="image/*" > </li>
+                <li class = "List_changePic" id = "List_2"><img src="/FirstPage/image/Aizen.png" id="image_2"> <input type="file" id="image_input2" accept="image/*"></li>
+                <li class ="List_changePic" id ="List_3"><img src="/FirstPage/image/Akaza.jpg" id="image_3"><input type="file" id="image_input3" accept="image/*"></li>
             </ul>
             
             </div>
             <div class="Button_cancer_confirm">
                 <ul>
-                    <li><button>Cancer</button></li>
-                    <li><button>Confirm</button></li>
+                    <li><button id="button_cancer" >Cancer</button></li>
+                    <li><button id ="button_confirm">Confirm</button></li>
                 </ul>
             </div>
             </div>
@@ -53,5 +54,7 @@
     
     
 </body>
-<script src="/AdminPage/Javascript/UpdatePic.js"></script>
+<script src="/AdminPage/Javascript/ChangePicui.js"></script>
+<script src="/AdminPage/Javascript/UpdatePicOpenButton.js"></script>
+
 </html>

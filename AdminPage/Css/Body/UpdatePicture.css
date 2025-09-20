@@ -1,15 +1,32 @@
 .InterfaceChangePic{
-    /* position: absolute; */
+    
     position: absolute;
-    display: flex;
-    top: 70px;
+    display: none;
+     top: 70px;
     z-index: 150;
     height: 90vh;
     width: 100%;
+   
+    
     /* border:1px solid blue; */
     justify-content: center;
+    /* transform: scale(0); */
     
 }
+
+.InterfaceChangePicOpen{
+     position: absolute;
+     display: flex;
+      top: 30px;
+    z-index: 150;
+    height: 90vh;
+    width: 100%;
+     justify-content: center;
+    transform: scale(0.9);
+    transition: transform 0.5s ease;
+}
+
+
 .InterdaceChangeList_div{
     display: flex;
     justify-content: center;
@@ -28,12 +45,13 @@
     grid-template-rows: auto auto auto;
     row-gap: 25px;
     padding: 0;
+    
     /* justify-content: center; */
 }
 .InterdaceChangeList_div ul li{
     border: 1px solid white;
     list-style: none;
-    padding: 50px;
+    padding: 20px;
     border-radius: 20px;
 }
 .Button_cancer_confirm{
@@ -45,12 +63,14 @@
     border: 1px solid white;
     width: 100%;
     height: 50px;
+    padding: 10px;
     display:grid;
     list-style: none;
     column-gap: 50px;
     background-color: #000000;
     /* align-content: end; */
     justify-content: end;
+    box-shadow:0px 0px 10px white;
     grid-template-columns: auto auto;
 }
 .Button_cancer_confirm ul li {
@@ -60,21 +80,30 @@
  box-sizing: border-box;
  align-content: center;
     /* padding:20px; */
-    margin-right: 10px;
+    margin-right: 5px;
     /* border: 1px solid white; */
 }
 .Button_cancer_confirm ul li button{
     border:1px solid white;
     border-radius: 15px;
     padding: 15px;
-    
+
 }
 .Button_cancer_confirm ul li:first-child button{
     background-color: red;
+    
+}
+.Button_cancer_confirm ul li:first-child button:hover{
+    background-color: rgb(141, 0, 0);
+    
 }
 .Button_cancer_confirm ul li:last-child button{
-    background-color: green;
+    background-color: rgb(0, 196, 0);
 }
+.Button_cancer_confirm ul li:last-child button:hover{
+    background-color: rgb(0, 100, 0);
+}
+
 .InnerInterface{
    justify-content: center;
     /* border: 1px solid rgb(255, 196, 0); */

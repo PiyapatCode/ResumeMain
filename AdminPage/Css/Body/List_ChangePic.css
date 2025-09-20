@@ -1,0 +1,55 @@
+.List_changePic img{
+    margin:0;
+    padding:0;
+   border-radius:15px;
+    width:150px;
+    /* border:1px solid red; */
+}
+/* List 1 */
+#List_1{
+    display: grid;
+    column-gap: 200px;
+    grid-template-columns: auto auto;
+    /* border:1px solid blue; */
+    
+}
+#List_1 input{
+   
+    align-content: center;
+    width: 200px;
+    
+    color: white;
+    
+}
+/* List 2 */
+#List_2{
+    display: grid;
+    column-gap: 200px;
+    grid-template-columns: auto auto;
+    /* border:1px solid blue; */
+    
+}
+#List_2 input{
+   
+    align-content: center;
+    width: 200px;
+    
+    color: white;
+    
+}
+/* List 3 */
+#List_3{
+    display: grid;
+    column-gap: 200px;
+    grid-template-columns: auto auto;
+    /* border:1px solid blue; */
+    
+}
+#List_3 input{
+   
+    align-content: center;
+    width: 200px;
+    
+    color: white;
+    
+}
