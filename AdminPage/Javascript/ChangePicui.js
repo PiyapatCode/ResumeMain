@@ -48,5 +48,5 @@ buttonconfirm.addEventListener('click',()=>{
     image_changed1.src = image1.src;
     image_changed2.src = image2.src;
     image_changed3.src = image3.src; 
-   
+    
 });
